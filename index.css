@@ -1,0 +1,21 @@
+/* @font-face {
+    font-family: 'PixelifySans';
+    src: url(ISS-Tracker/Font-files/PixelifySans-VariableFont_wght.ttf);
+} */
+body{
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+h1{
+    color: navy;
+    text-align: center;
+}
+#map{
+    height: 400px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
