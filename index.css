@@ -4,12 +4,35 @@
 } */
 body{
     background-color: black;
+    background-image: url(ISS-Tracker/images/earth0.jpg);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    filter: brightness(1.2) contrast(1.2);
     color: blue;
 }
 h1{
-    color: navy;
+    background-color: navy;
+    color: white;
     text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+h2{
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    margin: 5px 0;
 }
 #map{
     height: 400px;
@@ -17,5 +40,11 @@ h1{
     border: 1px solid lightgray;
     border-radius: 5px;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
-    margin: 10px;
+    margin: 10px auto;
+}
+footer{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
