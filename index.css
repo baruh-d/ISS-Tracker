@@ -2,6 +2,16 @@
     font-family: 'PixelifySans';
     src: url(ISS-Tracker/Font-files/PixelifySans-VariableFont_wght.ttf);
 } */
+header{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    max-width: 100px;
+}
 body{
     background-color: black;
     background-image: url(ISS-Tracker/images/earth0.jpg);
@@ -33,6 +43,16 @@ ul{
 }
 li{
     margin: 5px 0;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+.list-item{
+    margin: 5px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
 }
 #map{
     height: 400px;

@@ -1,6 +1,8 @@
 // javascript for ISS Tracking Site
 function getIssTrackerLocation(){
-fetch('http://api.open-notify.org/iss-now.json')
+fetch(
+    'https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json'
+    )
     .then(response=> {
         if(!response.ok){
             throw new Error('Network response is not ok');
