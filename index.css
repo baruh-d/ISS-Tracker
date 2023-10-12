@@ -23,6 +23,18 @@ body{
     filter: brightness(1.2) contrast(1.2);
     color: blue;
 }
+/* ISS details styling */
+#details .time,
+#details .latitude,
+details .longitude
+{
+    font-weight: bold;
+    font-size: 18px;
+    color: wheat;
+    margin-left: 20px 0;
+
+}
+
 h1{
     background-color: navy;
     color: white;

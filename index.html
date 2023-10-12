@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="ISS-Tracker/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src= "ISS-Tracker/index.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <title>ISS Tracking Site</title>
@@ -19,6 +20,20 @@
     <p>Fuel your curiosity and embark on a journey to understand this extraordinary symbol of international cooperation and human achievement in space exploration. Engage in a fascinating adventure that combines education and entertainment as you track the ISS, enjoy the beauty of the night sky, and uncover intriguing facts about the ISS and space science.</p>
     <p>Join us on this cosmic expedition, and let the mysteries of the universe unfold before your eyes.</p>
     <div id = "map" style="height: 400px;"></div>
+    <div>
+        <h2>ISS Details</h2>
+        <div>
+            Time:
+            <span class="time"></span>
+        </div>
+        <div>
+            Latitude:
+            <span class="latitude"></span>
+        </div>
+        <div>
+            Longitude:
+            <span class="longitude"></span>
+        </div>
     <div id="sidebar">
         <h2 class= "section-header">Random Fun Facts</h2>
         <button class="toggleFacts" id="toggleFacts">Toggle Random Facts</button>
