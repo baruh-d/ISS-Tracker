@@ -74,6 +74,21 @@ li{
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
     margin: 10px auto;
 }
+/* map zoom controls */
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+/* hover effect fot the zoom buttons */
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover{
+    background-color: white;
+    color: black;
+}
 #sidebar{
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
