@@ -1,20 +1,23 @@
 /* @font-face {
     font-family: 'PixelifySans';
-    src: url(ISS-Tracker/Font-files/PixelifySans-VariableFont_wght.ttf);
+    src: url('ISS-Tracker/Font-files/PixelifySans-VariableFont_wght.ttf');
 } */
-header{
+
+header {
     background-color: white;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#logo{
+
+#logo {
     max-width: 100px;
 }
-body{
+
+body {
     background-color: black;
-    background-image: url(ISS-Tracker/images/earth0.jpg);
+    background-image: url('ISS-Tracker/images/earth0.jpg');
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,50 +26,56 @@ body{
     filter: brightness(1.2) contrast(1.2);
     color: blue;
 }
+
 /* ISS details styling */
 #details .time,
 #details .latitude,
-details .longitude
+#details .longitude 
 {
     font-weight: bold;
     font-size: 18px;
     color: wheat;
-    margin-left: 20px 0;
-
+    margin: 20px 0; 
 }
 
-h1{
+h1 {
     background-color: navy;
     color: white;
     text-align: center;
     padding: 10px;
     margin: 0;
 }
-h2{
+
+h2 {
     background-color: navy;
     color: white;
     padding: 10px;
     margin: 20px 0;
     text-align: center;
 }
-ul{
+
+ul {
     list-style-type: none;
     padding: 0;
 }
-li{
+
+li {
     margin: 5px 0;
 }
-.list{
+
+.list {
     list-style-type: none;
     padding: 0;
 }
-.list-item{
+
+.list-item {
     margin: 5px 0;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 5px;
 }
-#map{
+
+#map {
     height: 400px;
     width: 100%;
     border: 1px solid lightgray;
@@ -74,22 +83,25 @@ li{
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
     margin: 10px auto;
 }
+
 /* map zoom controls */
 .leaflet-control-zoom-in,
-.leaflet-control-zoom-out{
+.leaflet-control-zoom-out {
     background-color: black;
     color: white;
     border: none;
     padding: 5px;
     cursor: pointer;
 }
-/* hover effect fot the zoom buttons */
+
+/* hover effect for the zoom buttons */
 .leaflet-control-zoom-in:hover,
-.leaflet-control-zoom-out:hover{
+.leaflet-control-zoom-out:hover {
     background-color: white;
     color: black;
 }
-#sidebar{
+
+#sidebar {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 10px;
@@ -102,14 +114,16 @@ li{
     z-index: 1;
     display: none;
 }
-#toggleFacts{
+
+#toggleFacts {
     background-color: navy;
     color: wheat;
     padding: 10px;
     border: none;
     cursor: pointer;
 }
-#crewList{
+
+#crewList {
     float: right;
     background-color: rgba(0, 0, 0, 0.9);
     color: wheat;
@@ -122,7 +136,8 @@ li{
     overflow-y: scroll;
     z-index: 1;
 }
-footer{
+
+footer {
     background-color: navy;
     color: wheat;
     text-align: center;
