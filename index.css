@@ -2,31 +2,34 @@
     font-family: 'PixelifySans';
     src: url('ISS-Tracker/Font-files/PixelifySans-VariableFont_wght.ttf');
 } */
-
+/* Content Container */
+#container {
+    margin: 0 auto;
+    padding: 20px;
+}
 header {
     background-color: white;
+    height: 50px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 #logo {
     max-width: 100px;
 }
 
 body {
-    background-color: black;
-    background-image: url('ISS-Tracker/images/earth0.jpg');
+    background-color: white;
+    background-image: url('https://cdn.pixabay.com/photo/2014/12/27/16/38/planet-581239_640.jpg') no-repeat center center fixed, black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     filter: brightness(1.2) contrast(1.2);
-    color: blue;
+    color: black;
 }
-
 /* ISS details styling */
 #details .time,
 #details .latitude,
@@ -34,24 +37,25 @@ body {
 {
     font-weight: bold;
     font-size: 18px;
-    color: wheat;
+    color: black;
     margin: 20px 0; 
 }
 
 h1 {
-    background-color: navy;
+    background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin: 0;
 }
 
 h2 {
-    background-color: navy;
-    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    color: black;
     padding: 10px;
     margin: 20px 0;
-    text-align: center;
+    text-align: left;
 }
 
 ul {
@@ -70,21 +74,20 @@ li {
 
 .list-item {
     margin: 5px 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: transparent;
     padding: 10px;
     border-radius: 5px;
 }
 
 #map {
     height: 400px;
-    width: 100%;
+    width: 50%;
     border: 1px solid lightgray;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
     margin: 10px auto;
 }
-
-/* map zoom controls */
+/* Zoom Controls Styles */
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out {
     background-color: black;
@@ -93,16 +96,19 @@ li {
     padding: 5px;
     cursor: pointer;
 }
-
-/* hover effect for the zoom buttons */
+/* Hover effect for the zoom buttons */
 .leaflet-control-zoom-in:hover,
 .leaflet-control-zoom-out:hover {
     background-color: white;
     color: black;
 }
-
+.leaflet-marker-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
 #sidebar {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px;
     position: fixed;
@@ -118,31 +124,47 @@ li {
 #toggleFacts {
     background-color: navy;
     color: wheat;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
 }
-
+.toggleFacts:hover{
+    background-color: royalblue;
+}
+.nasa-link{
+    text-decoration: none;
+    color: navy;
+}
+.nasa-link:hover{
+    text-decoration: underline;
+}
 #crewList {
-    float: right;
-    background-color: rgba(0, 0, 0, 0.9);
+    /* float: right; */
+    background-color: rgba(0, 0, 0, 0.7);
     color: wheat;
     padding: 10px;
+    padding-top: 0;
     position: fixed;
-    top: 0;
+    top: 200px;
     right: 0;
-    bottom: 0;
+    bottom: 120px;
+    height: 700px;
     width: 300px;
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: 1;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.3);
 }
-
-footer {
-    background-color: navy;
+.footer-content {
+    background-color: black;
     color: wheat;
     text-align: center;
-    padding: 10px;
-    bottom: 0;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
     width: 100%;
     position: fixed;
 }

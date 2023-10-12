@@ -12,21 +12,20 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img src="images/logo.jpeg" rel= "stylesheet"/>
+        <div id="logo"> 
+            <img src="images/logo.jpeg" rel= "stylesheet" alt="Logo Image"/>
         </div>
     </header>
+    <div id="container">
+    </div>
     <h1>Where is the ISS at?</h1>
     <p>Explore the wonders of the cosmos with our ISS Tracker. Witness the International Space Station (ISS) as it orbits our planet in real time, discovering its current location and trajectory.</p>
-    <p>Fuel your curiosity and embark on a journey to understand this extraordinary symbol of international cooperation and human achievement in space exploration. Engage in a fascinating adventure that combines education and entertainment as you track the ISS, enjoy the beauty of the night sky, and uncover intriguing facts about the ISS and space science.</p>
+    <p>Fuel your curiosity and embark on a journey to understand this extraordinary symbol of international cooperation and human achievement in space exploration.</p>
+    <p>Engage in a fascinating adventure that combines education and entertainment as you track the ISS, enjoy the beauty of the night sky, and uncover intriguing facts about the ISS and space science.</p>
     <p>Join us on this cosmic expedition, and let the mysteries of the universe unfold before your eyes.</p>
     <div id = "map" style="height: 400px;"></div>
-    <!-- Adding a zoom in button -->
-    <button id="zoom-in">Zoom In</button>
-    <!-- Adding a zoom out feature -->
-    <button id="zoom-out">Zoom Out</button>
-    <div>
-        <h2>ISS Details</h2>
+    <div id="details">
+        <h2><strong>ISS Details</strong></h2>
         <div>
             Time:
             <span class="time"></span>
@@ -39,10 +38,11 @@
             Longitude:
             <span class="longitude"></span>
         </div>
-    <div id="sidebar">
+    </div>
+    <div class="sidebar" style ="width: 75%">
         <h2 class= "section-header">Random Fun Facts</h2>
         <button class="toggleFacts" id="toggleFacts">Toggle Random Facts</button>
-        <ul id="factslist" class="list" style="display: none">
+        <ul id="factsList" class="list">
             <li class="list-item">Astronauts' average salary: $80,000 per year.</li>
             <li class="list-item">The ISS orbits the Earth approximately every 90 minutes.</li>
             <li class="list-item">The ISS travels at a speed of about 28,000 kilometers (17,500 miles) per hour.</li>
@@ -58,7 +58,9 @@
             <li class="list-item">The station has onboard laboratories for scientific research in areas such as biology, physics, and astronomy.</li>
             <li class="list-item">Astronauts on the ISS experience microgravity, which means they can float and move in any direction inside the station.</li>
         </ul>
-        <div/>
+<p>Explore more about the ISS on <a class="nasa-link" href="https://www.nasa.gov/mission_pages/station/main/index.html" target="_blank">NASA's ISS page</a></p>
+    </div>
+    <div style="margin-left: 30%;"></div>
     <div id="crewList">
         <h2 class="section-header">Crew in the ISS in 2023</h2>
         <p>Expedition 69 Crew-7 members aboard the station include:</p>
@@ -75,9 +77,12 @@
             <li class="list-item">Roscosmos cosmonaut Dmitri Petelin</li>
             <li class="list-item">Roscosmos cosmonaut Andrey Fedyaev</li>
         </ol>
-    <footer>
-        &copy; AstroTracer 2023
-    </footer>
+    </div>
     <script src="index.js"></script>
 </body>
+<footer>
+    <div class="footer-content">
+        <p>Copyright &copy; AstroTracer 2023</p>
+    </div>
+</footer>
 </html>
