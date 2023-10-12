@@ -33,7 +33,7 @@ function updateIssDetailsAndMap() {
 
                 // Create an ISS marker
                 const issIcon = L.icon({
-                    iconUrl: 'ISS-Tracker/images/iss.png',
+                    iconUrl: 'images/iss.png',
                     iconSize: [25, 25],
                     iconAnchor: [12.5, 12.5],
                 });
