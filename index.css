@@ -131,16 +131,17 @@ li {
 }
 
 #toggleFacts {
-    background-color: navy;
+    background-color: steelblue;
     color: wheat;
     padding: 10px 20px;
     border: none;
     font-size: 16px;
     border-radius: 5px;
+    transition: background-color 0.3s;
     cursor: pointer;
 }
 .toggleFacts:hover{
-    background-color: royalblue;
+    background-color: navy;
 }
 .nasa-link{
     text-decoration: none;
