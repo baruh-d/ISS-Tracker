@@ -83,3 +83,4 @@ const updateInterval = 1000;
 setInterval(() => {
     updateIssMarkerPosition([latitude, longitude]);
 }, 1000);
+
