@@ -42,9 +42,9 @@ function updateIssDetailsAndMap() {
 
                 // Update ISS details
                 const details = document.getElementById('details');
-                details.querySelector('.time').textContent = new Date(data.timestamp * 1000).toLocaleString();
-                details.querySelector('.latitude').textContent = latitude;
-                details.querySelector('.longitude').textContent = longitude;
+                details.querySelector('#details .time').textContent = new Date(data.timestamp * 1000).toLocaleString();
+                details.querySelector('#details .latitude').textContent = latitude;
+                details.querySelector('#details .longitude').textContent = longitude;
             })
             .catch(error => {
                 console.log('Error has occurred', error);
