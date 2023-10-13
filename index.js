@@ -2,11 +2,11 @@
 // Function to fetch ISS location and update details
 const url = 'https://corsproxy.io/?' + encodeURIComponent('http://api.open-notify.org/iss-now.json');
 let issMarker;
-let latitude; // Define latitude and longitude here
+let latitude; // Defining latitude and longitude here
 let longitude;
 
-function updateIssMarkerPosition([latitude, longitude]) {
-    if (issMarker) {
+function updateIssMarkerPosition(latitude, longitude) {
+    if (issMarker && typeof latitude !== 'undefined' && typeof longitude !== 'undefined') {
         issMarker.setLatLng([latitude, longitude]);
     }
 }
@@ -79,6 +79,7 @@ toggleFactsButton.addEventListener('click', toggleRandomFacts);
 });
 
 // Updates ISS marker position every second
+const updateInterval = 1000;
 setInterval(() => {
     updateIssMarkerPosition([latitude, longitude]);
 }, 1000);
