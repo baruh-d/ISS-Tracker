@@ -20,7 +20,6 @@
     <p><strong>Fuel your curiosity and embark on a journey to understand this extraordinary symbol of international cooperation and human achievement in space exploration.</strong></p>
     <p><strong>Engage in a fascinating adventure that combines education and entertainment as you track the ISS, enjoy the beauty of the night sky, and uncover intriguing facts about the ISS and space science.</strong></p>
     <p><strong>Join us on this cosmic expedition, and let the mysteries of the universe unfold before your eyes.</strong></p>
-
     <div id = "map" style="height: 400px;"></div>
     <div id="details">
         <h2><strong>ISS Details</strong></h2>
@@ -37,10 +36,10 @@
             <span class="longitude"></span>
         </div>
     </div>
-    <div id="datetime"></div>
-    <div class="sidebar" style ="width: 75%">
+    <!-- <div id="datetime"></div> -->
+    <div class="sidebar" style ="width: 100%">
         <h2 class= "section-header">Random Fun Facts</h2>
-        <button class="toggleFacts" id="toggleFacts">Toggle Random Facts</button>
+        <button class="toggleFacts" id="toggleFacts">Random Facts</button>
         <ul id="factsList" class="list">
             <li class="list-item">Astronauts' average salary: $80,000 per year.</li>
             <li class="list-item">The ISS orbits the Earth approximately every 90 minutes.</li>
@@ -59,11 +58,10 @@
         </ul>
 <p>Explore more about the ISS on <a class="nasa-link" href="https://www.nasa.gov/mission_pages/station/main/index.html" target="_blank">NASA's ISS page</a></p>
     </div>
-    <div style="margin-left: 30%;"></div>
-    <div id="crewList">
+    <div id="crewList" class="hidden">
         <h2 class="section-header">Crew in the ISS in 2023</h2>
-        <p>Expedition 69 Crew-7 members aboard the station include:</p>
-        <ol id="crewMembers" class="list">
+        <p>Expedition 69 Crew-7 members aboard the station include:</p>            
+        <ol id="crewMembers" class="hidden">
             <li class="list-item">NASA astronaut Jasmin Moghbeli</li>
             <li class="list-item">ESA (European Space Agency) astronaut Andreas Mogensen</li>
             <li class="list-item">JAXA (Japan Aerospace Exploration Agency) astronaut Satoshi Furukawa</li>
