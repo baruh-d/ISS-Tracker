@@ -78,9 +78,14 @@ function toggleRandomFacts() {
 toggleFactsButton.addEventListener('click', toggleRandomFacts);
 });
 
-// Updates ISS marker position every second
-const updateInterval = 1000;
+// // Updates ISS marker position every second
+// const updateInterval = 1000;
+// setInterval(() => {
+//     updateIssMarkerPosition([latitude, longitude]);
+// }, 1000);
+// Update ISS location and crew information every 5 seconds
+// Updates ISS marker position and details every second
 setInterval(() => {
-    updateIssMarkerPosition([latitude, longitude]);
+    updateIssDetailsAndMap();
 }, 1000);
 
